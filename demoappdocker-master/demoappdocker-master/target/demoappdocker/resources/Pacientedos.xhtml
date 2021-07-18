@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de estilos CSS en el propio documento</title>
+
+<style type="text/css">
+*{box-sizing:border-box;}
+
+body{
+background: linear-gradient(#e66465, #9198e5);
+ padding: 0px;
+ margin: 0px;
+ border:none;
+ width: 100%;
+ heigth:100%;
+ display:flex;
+}
+  
+form {
+	width: 600px;
+	heigth: 600px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 450px;
+	align-items: center;
+	margin-top: 32px;
+	background: white;
+}
+
+.tabla {
+	border-collapse: collapse;
+}
+
+.cabeceraTabla {
+	text-align: center;
+	background: none repeat scroll 0 0 #E5E5E5;
+	border-bottom: 1px solid #BBBBBB;
+	padding: 8px;
+}
+
+.filaPar {
+	text-align: center;
+	background: none repeat scroll 0 0 #FFFFFFF;
+	border-top: 1px solid #BBBBBB;
+}
+
+.filaImpar {
+	text-align: center;
+	background: none repeat scroll 0 0 #F9F9F9;
+	border-top: 1px solid #BBBBBB;
+}
+
+h1 {
+	font-family: cursive;
+	color: black;
+}
+
+outputLink{
+color: #9198e5;
+}
+form{
+	width:600px;
+	heigth:600px;
+	padding:20px;
+	border-radius:10px;
+	margin:450px;
+	align-items:center;
+	margin-top:32px;
+	background: white;
+	
+}
+  
+form label{
+	width:100px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:240px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:5px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#9198e5;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}  
+
+h1{
+font-family: cursive;
+color:black;
+
+}
+
+outputLink{
+color: #9198e5;
+}
+</style>
+</h:head>
+
+<h:body>
+    
+	<h:form>
+	<h1>Registro</h1>								
+					FirstName:
+					<h:inputText size="10" value="#{userBean.firstName}"
+			class="form-control" />
+			<br/>
+					LastName:
+					<h:inputText size="10" value="#{userBean.lastName}"
+			class="form-control" />
+			<br/>
+					Email:
+					<h:inputText size="10" value="#{userBean.email}"
+			class="form-control" />
+			<br/>
+					Address:
+					<h:inputText size="10" value="#{userBean.address}"
+			class="form-control" />
+			<br/>
+
+		<h:commandButton value="Guardar"
+			action="#{userBean.registrarPacientes}" class="btn btn-danger btn block" />
+   	</h:form> 
+	
+</h:body>
+
+</html>

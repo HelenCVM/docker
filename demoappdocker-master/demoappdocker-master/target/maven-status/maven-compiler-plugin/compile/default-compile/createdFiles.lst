@@ -1,0 +1,7 @@
+ec\edu\ups\p58\pw\demoappdocker\ApplictaionPathActivator.class
+ec\edu\ups\p58\pw\model\User.class
+ec\edu\ups\p58\pw\controlador\UserFacade.class
+ec\edu\ups\p58\pw\demoappdocker\HolaMundoService.class
+ec\edu\ups\p58\pw\controlador\AbstractFacade.class
+ec\edu\ups\p58\pw\demoappdocker\Jsf23Activator.class
+ec\edu\ups\p58\pw\controlador\UserBean.class
